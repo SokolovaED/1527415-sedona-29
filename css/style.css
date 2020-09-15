@@ -1,0 +1,141 @@
+:root {
+  --white: #ffffff;
+  --transparent-white: rgba(255, 255, 255, 0,3);
+  --black: #000000;
+  --transparent-black: rgba(0, 0, 0, 0.3);
+  --blue-50: #81B3D2;
+  --blue-100: #669EC0;
+  --blue-150: #5496BD;
+  --brown-50: #766357;
+  --brown-100: #604E43;
+  --brown-150: #503E33;
+  --grey-50: #F2F2F2;
+  --grey-100:#EBEBEB;
+  --grey-150: #E5E5E5;
+  --grey-200: #CACACA;
+  --grey-250: #ABABAB;
+  --grey-300: rgba (171, 171, 171, 0,3);
+  --grey-350:  #A9A9A9;
+  --grey-400: #666666;
+  --grey-450:#6A6A6A;
+  --grey-500: #333333;
+  --grey-550: #231F20;
+  --shadow-grey: rgba(0, 1, 1, 0.15);
+  --background-grey: #888888;
+  --background-lightgrey: #EEEEEE;
+}
+
+.page-body {
+  font-family: "PT Sans", Ariel, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--grey-500);
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: var(--background-grey);
+}
+
+.navigation-item a
+  font-weight: bold;
+  line-height: 26px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.navigation-item a:hover {
+  color: var(--blue-50);
+}
+
+.navigation-item a:active {
+  color: var(--transparent-black);
+}
+
+.intro-title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--black);
+}
+
+.intro-text {
+  line-height: 26px;
+}
+
+.item-title {
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--black);
+}
+
+.item-number {
+  color: var(--black);
+}
+
+.item-text {
+  color: var(--black);
+}
+
+.search-question {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.search-text {
+  color: var(--black);
+}
+
+.search-form {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+}
+
+.footer-contacts {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--black);
+}
+
+.telephone a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.text-copyright {
+  line-height: 26px;
+  color: var(--black);
+}
+
+.main-header {
+  background-color: var(--white);
+}
+
+.container {
+  background-color: var(--white);
+}
+
+.features-list {
+  background-color: var(--background-lightgrey);
+}
+
+.features-list .wide-block{
+  background-color: var(--blue-50);
+}
+
+.wide-block .item-title,
+.wide-block .item-number,
+.wide-block .item-text {
+  color: var(--white);
+}
+
+.advantages-list {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/*.hidden ???*/
+
