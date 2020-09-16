@@ -29,8 +29,8 @@
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  color: var(--grey-500);
   font-weight: 400;
+  color: var(--grey-500);
   text-transform: uppercase;
   background-color: var(--grey-50);
 }
@@ -41,8 +41,8 @@
 
 /* header */
 .navigation-item a {
-  font-weight: 700;
   line-height: 26px;
+  font-weight: 700;
   color: var(--black);
   text-decoration: none;
 }
@@ -56,11 +56,11 @@
 }
 /* header */
 
-/* main */
+/* main home page*/
 .intro-title {
-  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
   color: var(--black);
 }
 
@@ -88,8 +88,8 @@
 }
 
 .item-title {
-  font-weight: 700;
   font-size: 21px;
+  font-weight: 700;
   color: var(--black);
 }
 
@@ -106,9 +106,9 @@
 }
 
 .search-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 24px;
+  font-weight: 700;
   color: var(--black);
 }
 
@@ -117,24 +117,127 @@
 }
 
 .search-button {
-  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
   color: var(--white);
+  background-color: var(--brown-50);
+  text-decoration: none;
 }
-/* main */
+
+.search-button:hover {
+  background-color: var(--brown-100);
+}
+
+.search-button:active {
+  color: var(--transparent-white);
+  background-color: var(--brown-150);
+}
+/* main home page*/
+
+/* main hotels page*/
+.results-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.filter {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--black);
+}
+
+.filter-name.active {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--blue-50);
+  text-decoration: none;
+}
+
+.filter-name {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--transparent-black);
+  text-decoration: none;
+}
+
+.filter-name:hover {
+  color: var(--blue-50);
+}
+
+.filter-name:active {
+  color: var(--black);
+}
+
+.hotel-link {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.hotel-link:hover {
+  color: var(--blue-50);
+}
+
+.hotel-link:active {
+  color: var(--transparent-black);
+}
+
+.hotel-button {
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.button-about {
+  background-color: var(--blue-50);
+}
+
+.button-booking {
+  background-color: var(--brown-50);
+}
+
+.button-about:hover {
+  background-color: var(--blue-100);
+}
+
+.button-about:active {
+  background-color: var(--blue-150);
+}
+
+.button-booking:hover {
+  background-color: var(--brown-100);
+}
+
+.button-booking:active {
+  background-color: var(--brown-150);
+}
+
+.hotel-button:active {
+  color: var(--transparent-white);
+}
+
+.hotel-rating {
+  color: var(--grey-400);
+  background-color: var(--grey-50);
+}
+/* main hotels page*/
 
 /* footer */
 .footer-contacts {
-  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
   color: var(--black);
 }
 
 .telephone a {
-  text-decoration: none;
   color: var(--black);
+  text-decoration: none;
 }
 
 .text-copyright {
