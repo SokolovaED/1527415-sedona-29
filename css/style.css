@@ -1,6 +1,6 @@
 :root {
   --white: #ffffff;
-  --transparent-white: rgba(255, 255, 255, 0,3);
+  --transparent-white: rgba(255, 255, 255, 0.3);
   --black: #000000;
   --transparent-black: rgba(0, 0, 0, 0.3);
   --blue-50: #81B3D2;
@@ -10,33 +10,38 @@
   --brown-100: #604E43;
   --brown-150: #503E33;
   --grey-50: #F2F2F2;
-  --grey-100:#EBEBEB;
+  --grey-100: #EBEBEB;
+  --grey-120: #EEEEEE;
   --grey-150: #E5E5E5;
   --grey-200: #CACACA;
   --grey-250: #ABABAB;
-  --grey-300: rgba (171, 171, 171, 0,3);
-  --grey-350:  #A9A9A9;
+  --grey-300: rgba(171, 171, 171, 0.3);
+  --grey-350: #A9A9A9;
+  --grey-380: #888888;
   --grey-400: #666666;
-  --grey-450:#6A6A6A;
+  --grey-450: #6A6A6A;
   --grey-500: #333333;
   --grey-550: #231F20;
-  --shadow-grey: rgba(0, 1, 1, 0.15);
-  --background-grey: #888888;
-  --background-lightgrey: #EEEEEE;
+  --grey-600: rgba(0, 1, 1, 0.15);
 }
 
 .page-body {
-  font-family: "PT Sans", Ariel, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: var(--grey-500);
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
-  background-color: var(--background-grey);
+  background-color: var(--grey-50);
 }
 
-.navigation-item a
-  font-weight: bold;
+/* header */
+.main-header {
+  background-color: var(--white);
+}
+
+.navigation-item a {
+  font-weight: 700;
   line-height: 26px;
   color: var(--black);
   text-decoration: none;
@@ -49,9 +54,15 @@
 .navigation-item a:active {
   color: var(--transparent-black);
 }
+/* header */
+
+/* main */
+.container {
+  background-color: var(--white);
+}
 
 .intro-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: var(--black);
@@ -61,8 +72,27 @@
   line-height: 26px;
 }
 
+.features-list {
+  background-color: var(--white);
+}
+
+.features-list .wide-block {
+  background-color: var(--blue-50);
+}
+
+.wide-block .item-title,
+.wide-block .item-number,
+.wide-block .item-text {
+  color: var(--white);
+}
+
+.advantages-list {
+  color: var(--black);
+  background-color: var(--white);
+}
+
 .item-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   color: var(--black);
 }
@@ -75,26 +105,32 @@
   color: var(--black);
 }
 
-.search-question {
-  font-weight: bold;
+.feature-item .grey {
+  background-color: var(--grey-120);
+}
+
+.search-title {
+  font-weight: 700;
   font-size: 30px;
   line-height: 24px;
   color: var(--black);
 }
 
 .search-text {
-  color: var(--black);
+  line-height: 24px;
 }
 
-.search-form {
-  font-weight: bold;
+.search-button {
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: var(--white);
 }
+/* main */
 
+/* footer */
 .footer-contacts {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: var(--black);
@@ -109,33 +145,8 @@
   line-height: 26px;
   color: var(--black);
 }
+/* footer */
 
-.main-header {
-  background-color: var(--white);
-}
 
-.container {
-  background-color: var(--white);
-}
-
-.features-list {
-  background-color: var(--background-lightgrey);
-}
-
-.features-list .wide-block{
-  background-color: var(--blue-50);
-}
-
-.wide-block .item-title,
-.wide-block .item-number,
-.wide-block .item-text {
-  color: var(--white);
-}
-
-.advantages-list {
-  background-color: var(--white);
-  color: var(--black);
-}
-
-/*.hidden ???*/
+/*.visually-hidden ???*/
 
