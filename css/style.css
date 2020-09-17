@@ -54,6 +54,13 @@
 .navigation-item a:active {
   color: var(--transparent-black);
 }
+
+.navigation-item .active,
+.navigation-item .active:hover,
+.navigation-item .active:focus,
+.navigation-item .active:active {
+  color: var(--brown-50);
+}
 /* header */
 
 /* main home page*/
@@ -116,23 +123,18 @@
   line-height: 24px;
 }
 
+.button {
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--brown-50);
+}
+
 .search-button {
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
-  color: var(--white);
-  background-color: var(--brown-50);
-  text-decoration: none;
 }
 
-.search-button:hover {
-  background-color: var(--brown-100);
-}
-
-.search-button:active {
-  color: var(--transparent-white);
-  background-color: var(--brown-150);
-}
 /* main home page*/
 
 /* main hotels page*/
@@ -149,13 +151,6 @@
   color: var(--black);
 }
 
-.filter-name.active {
-  font-size: 12px;
-  line-height: 18px;
-  color: var(--blue-50);
-  text-decoration: none;
-}
-
 .filter-name {
   font-size: 12px;
   line-height: 18px;
@@ -169,6 +164,13 @@
 
 .filter-name:active {
   color: var(--black);
+}
+
+.filter-name.active,
+.filter-name.active:hover,
+.filter-name.active:focus,
+.filter-name.active:active {
+  color: var(--blue-50);
 }
 
 .hotel-link {
@@ -187,18 +189,17 @@
   color: var(--transparent-black);
 }
 
-.hotel-button {
-  font-weight: 700;
-  color: var(--white);
-  text-decoration: none;
+.button:hover {
+  background-color: var(--brown-100);
+}
+
+.button:active {
+  background-color: var(--brown-150);
+  color: var(--transparent-white);
 }
 
 .button-about {
   background-color: var(--blue-50);
-}
-
-.button-booking {
-  background-color: var(--brown-50);
 }
 
 .button-about:hover {
@@ -207,18 +208,6 @@
 
 .button-about:active {
   background-color: var(--blue-150);
-}
-
-.button-booking:hover {
-  background-color: var(--brown-100);
-}
-
-.button-booking:active {
-  background-color: var(--brown-150);
-}
-
-.hotel-button:active {
-  color: var(--transparent-white);
 }
 
 .hotel-rating {
