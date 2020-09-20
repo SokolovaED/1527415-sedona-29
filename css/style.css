@@ -15,6 +15,7 @@
   --grey-150: #e5e5e5;
   --grey-200: #cacaca;
   --grey-250: #ababab;
+  --grey-270: #BDBBBC;
   --grey-300: rgba(171, 171, 171, 0.3);
   --grey-350: #a9a9a9;
   --grey-380: #888888;
@@ -232,6 +233,14 @@
 .text-copyright {
   line-height: 26px;
   color: var(--black);
+}
+
+.logo-image:hover {
+  fill: var(--blue-50);
+}
+
+.logo-image:active {
+  fill: var(--grey-270);
 }
 /* footer */
 
