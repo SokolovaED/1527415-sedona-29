@@ -85,7 +85,7 @@
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0 72px;
   margin: 0;
   list-style: none;
@@ -99,8 +99,8 @@
   text-align: left;
 }
 
-.navigation-item:nth-child(3n),
-.navigation-item:nth-child(4n) {
+.navigation-item:nth-child(4n + 3),
+.navigation-item:nth-child(4n + 4) {
   text-align: right;
 }
 /* header */
@@ -202,6 +202,7 @@
   line-height: 26px;
   font-weight: 700;
   color: var(--black);
+  margin: 0;
   margin-right: 45px;
 }
 
@@ -278,22 +279,22 @@
 }
 
 .filter-wrapper {
-display:flex;
-align-items: center;
-padding-left: 73px;
-padding-right: 73px;
+  display: flex;
+  align-items: center;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .filter-list {
-  display:flex;
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
-  align-items: center;
 }
 
 .sort-list {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 0;
@@ -303,15 +304,61 @@ padding-right: 73px;
 }
 
 .hotels-item {
+  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
-.hotels-item {
+.hotel-info p,
+.footer-contacts p,
+.footer-copyright p {
+  margin: 0;
+}
+
+.hotels-list {
+  padding: 0;
+}
+
+.hotel-info {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 900px; /*написала примерно*/
 }
 
+.hotel-stars {
+  display: flex;
+  margin-left: auto;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6px;
+}
+
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-description {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hotels-name {
+  width: 100%;
+  margin: 0;
+}
+
+.image-link {
+  margin-right: 29px;
+}
 /* main hotels page*/
 
 /* footer */
