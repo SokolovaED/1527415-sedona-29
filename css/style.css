@@ -44,6 +44,7 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  min-height: 100%;
   width: 1200px;
   margin: 0 auto;
   background-color: var(--white);
@@ -51,11 +52,15 @@
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
 }
+
 /* header */
 .navigation-item a {
   line-height: 26px;
@@ -326,12 +331,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items:flex-start;
   width: 900px; /*написала примерно*/
 }
 
 .hotel-stars {
   display: flex;
-  margin-left: auto;
 }
 
 .text-wrapper {
@@ -348,7 +353,6 @@
 .hotel-description {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .hotels-name {
