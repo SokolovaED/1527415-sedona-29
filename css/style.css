@@ -141,6 +141,8 @@
   padding-bottom: 51px;
   padding-left: 359px;
   padding-right: 360px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .features-list {
@@ -174,6 +176,7 @@
 .intro-text {
   line-height: 26px;
   margin-top: 49px;
+  margin-bottom: 0;
 }
 
 .features-list .wide-block {
@@ -194,14 +197,19 @@
   color: var(--black);
   margin-top: 0;
   margin-bottom: 0;
+
 }
 
 .item-number {
+  display: inline-block;
   color: var(--black);
+  margin-top: 25px;
 }
 
 .item-text {
   color: var(--black);
+  margin-bottom: 0;
+  margin-top: 23px;
 }
 
 .feature-item.grey {
@@ -248,7 +256,7 @@
 
 .search {
   text-align: center;
-  margin-top: 57px;
+  padding-top: 57px;
 }
 
 .decoration-wrapper {
@@ -539,6 +547,8 @@
   list-style: none;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .social-item {
