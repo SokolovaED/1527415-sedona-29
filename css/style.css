@@ -485,9 +485,8 @@
 .hotel-info {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: flex-start;
-  width: 891px; /*написала примерно*/
+  flex-grow: 1;
 }
 
 .hotel-stars {
@@ -523,16 +522,16 @@
 
 .form-wrapper {
   background-image: url(../img/background-hotels.jpg);
-  width: 1200px;
-  height: 217px;
+  min-height: 217px;
 }
 
-.button {
+.button-about,
+.button-booking {
   padding-top: 3px;
   padding-right: 16px;
   padding-bottom: 3px;
   padding-left: 17px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .hotel-info .hotel-text {
@@ -563,17 +562,12 @@
   border-top: 11px solid var(--grey-200);
 }
 
-.sort-down.active::after,
-.sort-down:active::after {
+.sort-down.active::after {
   border-top-color: var(--blue-50);
 }
 
 .sort-up:hover::after {
   border-bottom-color: var(--black);
-}
-
-.sort-down:hover::after {
-  border-top-color: var(--black);
 }
 
 .sort-up:active::after {
