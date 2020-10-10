@@ -48,6 +48,7 @@
   width: 1200px;
   margin: 0 auto;
   background-color: var(--white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .visually-hidden {
@@ -339,6 +340,142 @@
   margin-top: 25px;
   margin-bottom: 0;
 }
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+  width: 568px;
+  padding: 55px;
+  box-sizing: border-box;
+  background-color: var(--white);
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.search-form,
+.date-picker,
+.counter {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.counter,
+.date-picker {
+  background-color: var(--grey-50);
+}
+
+.check-in,
+.check-out {
+  position: relative;
+}
+
+.date-picker {
+  width: 346px;
+  min-height: 38px;
+  text-transform: uppercase;
+  margin-left: 19px;
+  border: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+  box-sizing: border-box;
+}
+
+.counter {
+  width: 114px;
+  border: none;
+  text-align: center;
+  margin-left: 40px;
+  padding-top: 6px;
+  padding-right: 39px;
+  padding-bottom: 6px;
+  padding-left: 39px;
+  box-sizing: border-box;
+}
+
+.guests.children {
+  margin-left: 53px;
+}
+
+.counter.children {
+  margin-left: 27px;
+}
+
+.calendar {
+  position: absolute;
+  display: inline-block;
+  border: none;
+  right: 8px;
+  top: 7px;
+}
+
+.guests {
+  position: relative;
+  margin-top: 30px;
+}
+
+.minus {
+  position: absolute;
+  border: none;
+  font-size: 0;
+  left: 80px;
+  top: 16px;
+}
+
+.minus.adults {
+  position: absolute;
+  border: none;
+  font-size: 0;
+  left: 127px;
+  top: 16px;
+}
+
+.plus {
+  position: absolute;
+  border: none;
+  font-size: 0;
+  right: 16px;
+  top: 12px;
+}
+
+.search-form .button-find {
+  width: 100%;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--blue-50);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 54px;
+}
+
+.button-find:active {
+  color: var(--transparent-white);
+}
+
+.check-out {
+  margin-top: 29px;
+}
+
+.form-icon {
+  fill: var(--grey-350);
+}
+
+.form-icon:hover {
+  fill: var(--black);
+}
+
+.form-icon:active {
+  fill: var(--blue-50);
+}
+
 /* main home page*/
 
 /* main hotels page*/
