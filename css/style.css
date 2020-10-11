@@ -345,6 +345,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   position: absolute;
   width: 568px;
   padding: 55px;
@@ -368,16 +369,10 @@
   background-color: var(--grey-50);
 }
 
-.check-in,
-.check-out {
-  position: relative;
-}
-
 .date-picker {
   width: 346px;
   min-height: 38px;
   text-transform: uppercase;
-  margin-left: 19px;
   border: none;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -389,57 +384,42 @@
   width: 114px;
   border: none;
   text-align: center;
-  margin-left: 40px;
-  padding-top: 6px;
-  padding-right: 39px;
-  padding-bottom: 6px;
-  padding-left: 39px;
+  padding: 6px;
   box-sizing: border-box;
-}
-
-.guests.children {
-  margin-left: 53px;
-}
-
-.counter.children {
-  margin-left: 27px;
 }
 
 .calendar {
   position: absolute;
   display: inline-block;
   border: none;
-  right: 8px;
+  right: 7px;
   top: 7px;
 }
 
 .guests {
   position: relative;
-  margin-top: 30px;
 }
 
 .minus {
   position: absolute;
   border: none;
   font-size: 0;
-  left: 80px;
-  top: 16px;
-}
-
-.minus.adults {
-  position: absolute;
-  border: none;
-  font-size: 0;
-  left: 127px;
-  top: 16px;
+  left: 111px;
+  top: 0px;
+  width: 38px;
+  height: 38px;
+  background-color: var(--grey-50);
 }
 
 .plus {
   position: absolute;
   border: none;
   font-size: 0;
-  right: 16px;
-  top: 12px;
+  right: 0px;
+  top: 0px;
+  width: 38px;
+  height: 38px;
+  background-color: var(--grey-50);
 }
 
 .search-form .button-find {
@@ -460,10 +440,6 @@
   color: var(--transparent-white);
 }
 
-.check-out {
-  margin-top: 29px;
-}
-
 .form-icon {
   fill: var(--grey-350);
 }
@@ -476,6 +452,36 @@
   fill: var(--blue-50);
 }
 
+.field-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  margin-top: 29px;
+  margin-bottom: 0;
+}
+
+.field-wrapper:first-child {
+  margin-top: 0;
+}
+
+.field-guests {
+  width: 50%;
+}
+
+.counter.adults {
+  margin-right: 4px;
+}
+
+.guests.children {
+  margin-left: 53px;
+}
+
+.field-wrapper button {
+  padding: 0;
+}
 /* main home page*/
 
 /* main hotels page*/
