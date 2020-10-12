@@ -400,11 +400,11 @@
   position: relative;
 }
 
-.minus {
+.minus,
+.plus {
   position: absolute;
   border: none;
   font-size: 0;
-  left: 111px;
   top: 0px;
   width: 38px;
   height: 38px;
@@ -412,14 +412,11 @@
 }
 
 .plus {
-  position: absolute;
-  border: none;
-  font-size: 0;
   right: 0px;
-  top: 0px;
-  width: 38px;
-  height: 38px;
-  background-color: var(--grey-50);
+}
+
+.minus {
+  left: 111px;
 }
 
 .search-form .button-find {
@@ -444,11 +441,13 @@
   fill: var(--grey-350);
 }
 
-.form-icon:hover {
+.minus:hover svg,
+.plus:hover svg {
   fill: var(--black);
 }
 
-.form-icon:active {
+.minus:active svg,
+.plus:active svg {
   fill: var(--blue-50);
 }
 
