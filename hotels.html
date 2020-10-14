@@ -25,40 +25,74 @@
       </nav>
     </header>
     <main class="catalog">
-      <h1 class="visually-hidden">Гостиницы</h1>
-      <!--Скрытый заголовок-->
+      <h1 class="visually-hidden">Каталог гостиниц</h1>
       <div class="form-wrapper">
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
-            <label>
-              <input type="checkbox" name="infrastructure" value="Бассейн" checked>Бассейн
-            </label>
-            <label>
-              <input type="checkbox" name="infrastructure" value="Парковка">Парковка
-            </label>
-            <label>
-              <input type="checkbox" name="infrastructure" value="Wi-Fi">Wi-Fi
-            </label>
+        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter-group">
+            <legend class="name-title">Инфраструктура:</legend>
+            <ul class="group-list">
+              <li class="group-item">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="infrastructure" value="Бассейн"
+                  id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li class="group-item">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="infrastructure" value="Парковка"
+                  id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="group-item">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="infrastructure" value="Wi-Fi"
+                  id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset>
-            <legend>Тип жилья:</legend>
-            <label>
-              <input type="checkbox" name="typeofhousing" value="Гостиница" checked>Гостиница
-            </label>
-            <label>
-              <input type="checkbox" name="typeofhousing" value="Мотель" checked>Мотель
-            </label>
-            <label>
-              <input type="checkbox" name="typeofhousing" value="Апартаменты" checked>Апартаменты
-            </label>
+          <fieldset class="filter-group hotels">
+            <legend class="name-title">Тип жилья:</legend>
+            <ul class="group-list">
+              <li class="group-item">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="typeofhousing" value="Гостиница"
+                  id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li class="group-item">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="typeofhousing" value="Мотель"
+                  id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li class="group-item">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="typeofhousing" value="Апартаменты"
+                  id="apartments" checked>
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
           </fieldset>
-          <!--Продолжение формы будет после следующих лекций-->
+          <fialdset class="filter-price">
+            <legend class="name-title">Стоимость в сутки (Р):</legend>
+            <div class="price-controls">
+              <label class="min-price">от
+                <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">до
+                <input type="number" name="max-price" value="3000">
+              </label>
+            </div>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+            </div>
+            <button class="button-hotels" type="submit" name="button-hotels">Показать</button>
+          </fialdset>
         </form>
       </div>
       <section class="searching-results">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <!--Скрытый заголовок-->
         <div class="filter-wrapper">
           <p class="results-title">Найдено:3</p>
           <h3 class="filter">Сортировка:</h3>
