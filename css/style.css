@@ -662,11 +662,6 @@
   margin-right: 29px;
 }
 
-.form-wrapper {
-  background-image: url(../img/background-hotels.jpg);
-  min-height: 217px;
-}
-
 .button-about,
 .button-booking {
   padding-top: 3px;
@@ -797,6 +792,12 @@
   padding-right: 73px;
   padding-bottom: 31px;
   box-sizing: border-box;
+  background-image: url(../img/background-hotels.jpg);
+  min-height: 217px;
+}
+
+.filter-group {
+  width: 25%;
 }
 
 .filter-group,
@@ -807,23 +808,19 @@
 }
 
 .filter-price {
+  width: 50%;
   margin: 0;
-  margin-left: auto;
   padding: 0;
+  padding-left: 210px;
   border: none;
+  box-sizing: border-box;
 }
 
 .group-list {
-  display: flex;
-  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
   color: var(--white);
-}
-
-.filter-group.hotels {
-  margin-left: 119px;
 }
 
 .price-controls {
@@ -907,36 +904,17 @@
 }
 
 .filter-checkbox:checked + label::before {
-  content: "";
-  position: absolute;
   background-image: url(../img/checkbox-on.svg);
-  background-repeat: no-repeat;
-  left: -42px;
-  top: 0;
   width: 27px;
-  height: 23px;
 }
 
 .filter-checkbox:disabled + label::before {
-  content: "";
-  position: absolute;
   background-image: url(../img/checkbox-off-disabled.svg);
-  background-repeat: no-repeat;
-  left: -42px;
-  top: 0;
-  width: 23px;
-  height: 23px;
 }
 
 .filter-checkbox:disabled:checked + label::before {
-  content: "";
-  position: absolute;
   background-image: url(../img/checkbox-on-disabled.svg);
-  background-repeat: no-repeat;
-  left: -42px;
-  top: 0;
   width: 27px;
-  height: 23px;
 }
 
 .range-controls .toggle:hover {
