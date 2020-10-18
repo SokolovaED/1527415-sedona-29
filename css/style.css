@@ -461,6 +461,14 @@
   fill: var(--grey-350);
 }
 
+.minus .form-icon,
+.plus .form-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .minus:hover svg,
 .plus:hover svg {
   fill: var(--black);
@@ -943,6 +951,12 @@
 .filter-checkbox:disabled:checked + label::before {
   background-image: url(../img/checkbox-on-disabled.svg);
   width: 27px;
+}
+
+.filter-checkbox:focus + label::before,
+.toggle:focus,
+.sort-up:focus::after {
+  outline: 2px solid var(--grey-380);
 }
 
 .range-controls .toggle:hover {
